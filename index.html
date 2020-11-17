@@ -1,26 +1,45 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Javascript Projects</title>
+        <title>Fakhry Fernanda</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="color-flipper">
-            <div class="color-information">
-                <p>Background Color : <span class="color">#b4f0d7</span></p>
-            </div>
-            <div class="btn" id="btn">CLICK ME</div>    
-        </div>
-        
-        <div id="counter">
-            <h1>Counter</h1>
-            <p id="number-counted">0</p>
-            <div class="counter-box">
-                <div id="decrease-btn">DECREASE</div>
-                <div id="reset-btn">RESET</div>
-                <div id="increase-btn">INCREASE</div>
+        <div id="nav-bar">
+            <div id="logo">Fakhry Fernanda</div>
+            <div id="nav-menu">
+                <ul>
+                    <li><a>HTML & CSS</a></li>
+                    <li><a href="#javascript-container">Javascript</a></li>
+                    <li><a>About</a></li>
+                </ul>
             </div>
         </div>
+        <div class="javascript-container">
+            <h1>Javascript Projects</h1>
+            <div id="js12">
+                <div id="color-flipper">
+                    <h1>Color Flipper</h1>
+                    <div class="color-information">
+                        <p>Background Color : <span class="color">#b4f0d7</span></p>
+                    </div>
+                    <div class="btn" id="btn">CLICK ME</div>    
+                </div>           
+                
+                <div id="counter">
+                    <div id="counter-container">
+                        <h1>Counter</h1>
+                        <p id="number-counted">0</p>
+                        <div class="counter-box">
+                            <div id="decrease-btn">DECREASE</div>
+                            <div id="reset-btn">RESET</div>
+                            <div id="increase-btn">INCREASE</div>
+                        </div>
+                    </div>
+                </div> <!--counter div-->
+            </div> <!--js12 div-->
+        </div> <!--project container div-->
+       
 
         <script src="script.js"></script>
     </body>

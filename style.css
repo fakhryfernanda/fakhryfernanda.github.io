@@ -13,10 +13,10 @@ body {
 }
 
 #nav-bar {
+    z-index: 2;
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #333;
     padding: 1em 0;
     display: flex;
     align-items: center;
@@ -53,9 +53,46 @@ li:hover {
     cursor: pointer;
 }
 
-.javascript-container {
+#wallpaper {
+    background-image: url(images/jan-kronies-hzvX-09NIBg-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,255,255,0.2), rgba(0,255,255,0.1));
+    position: absolute;
+}
+
+.title-container {
+    z-index: 1;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#html {
+    height: 50vh;
+    background-color: #f1f5f8;
+    text-align: center;
+}
+
+#javascript {
     width: 90vw;
-    margin: 15vh auto 0;
+    margin: 2em auto;
     padding: 2em 0;
     font-family: sans-serif;
     text-align: center;
@@ -160,4 +197,10 @@ li:hover {
     background-color: black;
     color: white;
     cursor: pointer;
+}
+
+#about {
+    height: 50vh;
+    background-color: #f1f5f8;
+    text-align: center;
 }

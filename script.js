@@ -1,3 +1,13 @@
+const navBar = document.getElementById("nav-bar");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navBar.style.background = "linear-gradient(to right, rgb(0,255,255), rgb(255,0,255))";
+    } else {
+        navBar.style.background = "none";        
+    }
+};
+
 // =============
 // Color Flipper
 // =============

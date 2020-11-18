@@ -21,12 +21,14 @@ var modal = document.getElementById("slide-modal");
 // Get the image and insert it inside the modal
 var img = document.querySelectorAll(".slide-image");
 var modalImg = document.getElementsByClassName("modal-content")[0];
+var link = document.getElementsByClassName("direct-link")[0];
 
 img.forEach(function(image,index){
     image.addEventListener("click", function(){
         modal.style.display = "block";
         modalImg.src = this.src;
-        
+        link.href = this.alt;
+        link.target = "_blank";
     });
 });
 

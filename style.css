@@ -114,7 +114,7 @@ li:hover {
 
 .slide-image {
     object-fit: contain;
-    margin: 0 10em;
+    margin: 0;
 }
 
 .slide-image:hover {
@@ -128,7 +128,7 @@ li:hover {
     left: 0;
     top: 0;
     z-index: 4; /* Sit on top */
-    padding: 2em 0;
+    padding: 1em 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -140,8 +140,8 @@ li:hover {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 900px;
-    margin-top: 1em;
+    max-width: 850px;
+    margin: 1em auto;
 }
 
 .modal-content {  
@@ -151,7 +151,7 @@ li:hover {
     animation-duration: 0.6s;
 }
 
-.close {
+.close, .direct-link {
     color: white;
     text-decoration: underline;
     cursor: pointer;

@@ -14,6 +14,7 @@ body {
 
 #nav-bar {
     z-index: 2;
+    height: 3em;
     width: 100%;
     position: fixed;
     top: 0;
@@ -23,13 +24,18 @@ body {
 }
 
 #logo {
+    position: relative;
+    bottom: 0.15em;
     margin-left: 2em;
     font-size: 2.3rem;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 700;
-    padding: 0 0.5em;
-    color: white;
-    text-shadow: 0px 4px 2px grey;
+    /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    /* text-shadow: 0px 4px 2px grey; */
+    cursor: pointer;
 }
 
 #nav-menu {
@@ -87,9 +93,28 @@ li:hover {
 }
 
 #html {
-    height: 50vh;
     background-color: #f1f5f8;
     text-align: center;
+    padding: 2em 0;
+}
+
+#html h1 {
+    font-family: sans-serif;
+}
+
+.slideshow-container {
+    width: 85%;
+    margin: 2em auto 0;
+    padding: 1em;
+    background-color: white;
+    display: flex;
+    overflow-x: scroll;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+.slideshow-container img {
+    object-fit: contain;
+    margin: 0;
 }
 
 #javascript {

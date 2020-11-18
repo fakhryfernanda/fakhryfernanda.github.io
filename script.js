@@ -1,12 +1,21 @@
 const navBar = document.getElementById("nav-bar");
+const navMenu = document.getElementById("nav-menu");
 
 window.onscroll = function() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navBar.style.background = "linear-gradient(to right, rgb(0,255,255), rgb(255,0,255))";
+        navBar.style.background = "linear-gradient(to right, #FDFBFB, #EBEDEE 70%";
+        navBar.style.boxShadow = "1px 0px 8px rgba(0,0,0,0.4)"
+        navMenu.style.color = "black"
+        // linear-gradient(to right, rgb(0,255,255), rgb(255,0,255))
     } else {
-        navBar.style.background = "none";        
+        navBar.style.background = "none"; 
+        navBar.style.boxShadow = ""      
+        navMenu.style.color = "white" 
     }
 };
+
+// Slideshow
+
 
 // =============
 // Color Flipper

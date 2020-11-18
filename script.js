@@ -16,6 +16,27 @@ window.onscroll = function() {
 
 // Slideshow
 
+var modal = document.getElementById("slide-modal");
+
+// Get the image and insert it inside the modal
+var img = document.querySelectorAll(".slide-image");
+var modalImg = document.getElementsByClassName("modal-content")[0];
+
+img.forEach(function(image,index){
+    image.addEventListener("click", function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        
+    });
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
 
 // =============
 // Color Flipper

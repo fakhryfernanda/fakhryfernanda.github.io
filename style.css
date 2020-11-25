@@ -441,7 +441,7 @@ input {
     }
 
     body {
-        width: 414px;
+        width: 100vw;
     }
 
     #simple-messaging-app {

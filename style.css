@@ -440,10 +440,6 @@ input {
         font-size: 20px;
     }
 
-    body {
-        width: 100vw;
-    }
-
     #simple-messaging-app {
         display: none;
     }

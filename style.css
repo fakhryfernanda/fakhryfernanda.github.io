@@ -9,8 +9,9 @@ a {
     text-decoration: none;
 }
 
-body {
-}
+/* body {} */
+
+/* NAVIGATION BAR */
 
 #nav-bar {
     z-index: 2;
@@ -61,10 +62,13 @@ li:hover {
     cursor: pointer;
 }
 
+/* WALLPAPER */
+
 #wallpaper {
     background-image: url(images/jan-kronies-hzvX-09NIBg-unsplash.jpg);
     background-size: cover;
     height: 100vh;
+    width: 100vw;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -92,13 +96,20 @@ li:hover {
     font-weight: 600;
 }
 
-#html {
+/*  ========
+    CONTENT
+    ======== */
+
+
+/* HTML */
+
+#html-container {
     background-color: #f1f5f8;
     text-align: center;
     padding: 2em 0;
 }
 
-#html h1 {
+#html-container h1 {
     font-family: sans-serif;
 }
 
@@ -127,15 +138,14 @@ li:hover {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 4; /* Sit on top */
+    z-index: 3; 
     padding: 1em 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
     background-color: rgba(0,0,0,0.9);
 }
 
-/* Modal Content (Image) */
 .modal-content {
     margin: auto;
     display: block;
@@ -171,27 +181,29 @@ from {transform:scale(0)}
 to {transform:scale(1)}
 }
 
-#javascript {
+/* JAVASCRIPT */
+
+#javascript-container {
     width: 90vw;
-    margin: 2em auto;
+    margin: 0 auto;
     padding: 2em 0;
     font-family: sans-serif;
     text-align: center;
-    border-radius: 10px;
-    border: 1px solid black;
-    /* box-shadow: 0px 0px 1px 1px black; */
+}
+
+#javascript-container > div {
+    margin: 1em 0;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+    /* border: 1px solid black; */
 }
 
 #js12 {
     width: 100%;
-    margin: 1em 0;
     display: flex;
     justify-content: space-evenly;
+    padding: 2em 0;
+    border-radius: 10px;
 }
-
-/*  =============
-    COLOR FLIPPER
-    ============= */
 
 #color-flipper {
     width: 40vw;
@@ -214,7 +226,7 @@ to {transform:scale(1)}
     margin: 1em 0;
 }
 
-.color {
+span.color {
     color: #b4f0d7;
 }
 
@@ -231,10 +243,6 @@ to {transform:scale(1)}
     color: white;
 }
 
-/*  ========
-    COUNTER
-    ======== */
-
 #counter {
     width: 40vw;
     padding: 1em 0;
@@ -250,7 +258,6 @@ to {transform:scale(1)}
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #counter > h1 {
@@ -266,7 +273,7 @@ to {transform:scale(1)}
     display: flex;
 }
 
-.counter-box > div {
+.count-btn {
     font-size: 0.8rem;
     margin: 0 0.4em;
     padding: 0.5em 1em;
@@ -274,14 +281,170 @@ to {transform:scale(1)}
     border-radius: 5px;
 }
 
-.counter-box > div:hover {
+.count-btn:hover {
     background-color: black;
     color: white;
     cursor: pointer;
 }
 
+#simple-messaging-app {
+    height: 85vh;
+    border-radius: 10px;
+    padding: 1em 2em;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.js3-text {
+    width: 50%;
+    height: 100%;
+    /* background-color: gold; */
+    padding: 1em 2em;
+    text-align: left;
+}
+
+.js3-text > h1 {
+    font-size: 2rem;
+}
+
+#phone1, #phone2 {
+    height: 120%;
+    width: 25%;
+    padding: 1em;
+    position: relative;
+    bottom: 10%;
+    border-radius: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 8px rgba(0,225,225,0.5);
+}
+
+#upper1, #upper2 {
+    width: 60%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    top: 3px;
+}
+
+#screen1, #screen2 {
+    padding-top: 10.5%;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #ececed;
+}
+
+#phone1-header, #phone2-header {
+    height: 10%;
+    background-color: #ececed;
+    /* background-color: salmon; */
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.profile1-photo, .profile2-photo {
+    height: 40px;
+    width: 40px;
+    background-color: maroon;
+    border-radius: 50%;
+}
+
+.receiver1, .receiver2 {
+    margin: 0 1em;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#screen1-content, #screen2-content {
+    height: 77%;
+    background: url(images/phone-bg.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+#messages1, #messages2 {
+    /* margin-bottom: 2em; */
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+#messages1 li, #messages2 li {
+    max-width: 80%;
+    list-style-type: none;
+    /* color: white; */
+    background-color: #e1dfc7;
+    padding: 0.3em 0.5em;
+    margin-bottom: 0.2em;
+}
+
+#type-box1, #type-box2 {
+    height: 8%;
+    background-color: #ececed;
+    border-top: 1px solid grey;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border-radius: 20px;
+    padding: 0.3em;
+    margin-left: 1em;
+    outline: none;
+}
+
+.send-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: gold;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    opacity: 0.8;
+}
+
+/* ABOUT */
+
 #about {
     height: 50vh;
     background-color: #f1f5f8;
     text-align: center;
+}
+
+/* FOOTER */
+
+#footer {
+    height: 15vh;
+    background-color: #252525;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (max-width:500px) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        width: 414px;
+    }
+
+    #simple-messaging-app {
+        display: none;
+    }
 }

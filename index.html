@@ -2,29 +2,28 @@
     <head>
         <meta charset="utf-8">
         <title>Fakhry Fernanda</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="nav-bar">
+        <nav id="nav-bar">
             <a id="logo" href="#">fakhry</a>
-            <div id="nav-menu">
-                <ul>
-                    <li><a href="#html">HTML & CSS</a></li>
-                    <li><a href="#javascript">Javascript</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-        </div>
+            <ul id="nav-menu">
+                <li><a href="#html-container">HTML & CSS</a></li>
+                <li><a href="#javascript-container">Javascript</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
 
-        <div id="wallpaper">
+        <section id="wallpaper">
             <div class="overlay"></div>
             <div class="title-container">
                 <p class="title">FAKHRY FERNANDA</p>
                 <p class="subtitle">Aliquam faucibus dolor est, vitae mattis sapien iaculis in. Cras dapibus nisl at ipsum eleifend dignissim. Donec elementum, lectus lacinia facilisis ultricies, quam lectus congue.</p>    
             </div>
-        </div>
+        </section>
 
-        <section id="html">
+        <section id="html-container">
             <h1>HTML & CSS Projects</h1>
             <div class="slideshow-container">
                 <div class="space"></div>
@@ -42,8 +41,7 @@
     
         </section> <!--html section-->
 
-
-        <section id="javascript">
+        <section id="javascript-container">
             <h1>Javascript Projects</h1>
             <div id="js12">
                 <div id="color-flipper">
@@ -59,18 +57,70 @@
                         <h1>Counter</h1>
                         <p id="number-counted">0</p>
                         <div class="counter-box">
-                            <div id="decrease-btn">DECREASE</div>
-                            <div id="reset-btn">RESET</div>
-                            <div id="increase-btn">INCREASE</div>
+                            <div class="count-btn">DECREASE</div>
+                            <div class="count-btn">RESET</div>
+                            <div class="count-btn">INCREASE</div>
                         </div>
                     </div>
                 </div> <!--counter div-->
             </div> <!--js12 div-->
+
+            <div id="simple-messaging-app">
+                <div id="phone1">
+                    <div id="upper1"></div>
+                    <div id="screen1">
+                        <div id="phone1-header">
+                            <div class="profile1-photo"></div>
+                            <div class="receiver1">
+                                <p><b>Imam Kesayangan</b></p>
+                                <p>online</p>
+                            </div>
+                        </div>
+                        <div id="screen1-content">
+                            <ul id="messages1"></ul>
+                        </div>
+                        <div id="type-box1">
+                            <input>
+                            <div class="send-button"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="js3-text">
+                    <h1>Dekap jarak, eratkan rasa</h1>
+                    <p><br>Instant Messaging</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ornare ante. Aliquam mollis id ante vitae consectetur. Integer venenatis tortor in tellus rutrum, non condimentum urna tincidunt. Maecenas commodo metus in vehicula vulputate. Duis molestie volutpat bibendum. Curabitur nec fermentum nisi. Pellentesque gravida leo aliquam tempor sagittis. Donec interdum aliquam augue sed sagittis. Mauris maximus libero id sodales porttitor.</p>
+                </div>
+                <div id="phone2">
+                    <div id="upper2"></div>
+                    <div id="screen2">
+                        <div id="phone2-header">
+                            <div class="profile2-photo"></div>
+                            <div class="receiver2">
+                                <p><b>Makmum Kesayangan</b></p>
+                                <p>online</p>
+                            </div>
+                        </div>
+                        <div id="screen2-content">
+                            <ul id="messages2">
+                                <li>Aqua</li>
+                                <li>Vit</li>
+                            </ul>
+                        </div>
+                        <div id="type-box2">
+                            <input>
+                            <div class="send-button"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section> <!--javascript container div-->
        
-        <div id="about">
+        <section id="about">
             <h1>About</h1>
-        </div>
+        </section>
+
+        <footer id="footer">Footer</footer>
 
         <script src="script.js"></script>
     </body>

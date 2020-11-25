@@ -435,7 +435,11 @@ input {
     font-size: 2rem;
 }
 
-@media (max-width:500px) {
+#simple-messaging-app {
+    display: none;
+}
+
+/* @media (max-width:500px) {
     html {
         font-size: 20px;
     }
@@ -443,4 +447,4 @@ input {
     #simple-messaging-app {
         display: none;
     }
-}
+} */
